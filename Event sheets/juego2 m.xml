@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>juego2 m</name>
+    <events>
+        <event-group description="" sid="7258821580693206" title="opciones click">
+            <sub-events>
+                <event-block sid="2352100638081355">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="6579223091831761" type="Mouse">
+                            <param id="0" name="Object">n21jugar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="7943448113893894" type="n21jugar">
+                            <param id="0" name="Scale">1.2</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="7976032527940816" type="n21jugar">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4747775995141886">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="5408303024769736" type="Mouse">
+                            <param id="0" name="Object">n21jugar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="5860071111191281" type="n21jugar">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="9032324901122677" type="n21jugar">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4091033693514144">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="5203619299622001" type="Mouse">
+                            <param id="0" name="Object">n21ayuda</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="6001557053177184" type="n21ayuda">
+                            <param id="0" name="Scale">1.2</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="4753516555421802" type="n21ayuda">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9239768701499275">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="5056206248863263" type="Mouse">
+                            <param id="0" name="Object">n21ayuda</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="6081624490735918" type="n21ayuda">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="8917862590660968" type="n21ayuda">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2646031322468046">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="6725560761349343" type="Mouse">
+                            <param id="0" name="Object">n21salir</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="3559978106435392" type="n21salir">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="233392189590444" type="n21salir">
+                            <param id="0" name="Scale">1.2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4733661461492866">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="9052828779845674" type="Mouse">
+                            <param id="0" name="Object">n21salir</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="4997658228321305" type="n21salir">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="8512925485366905" type="n21salir">
+                            <param id="0" name="Scale">0.8</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="5363427950680259">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6341616261559985" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">n21jugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5413331349794685" type="System">
+                    <param id="0" name="Layout">nivel3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5434856773087587">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9384890911912091" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">n21salir</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4152441346869441" type="System">
+                    <param id="0" name="Layout">menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

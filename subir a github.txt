@@ -1,0 +1,8 @@
+Get your local Git repository on Bitbucket
+Step 1: Switch to your repository's directory
+
+cd /path/to/your/repo
+Step 2: Connect your existing repository to Bitbucket
+
+git remote add origin https://dixroby@bitbucket.org/dixroby/aquaman.git
+git push -u origin master

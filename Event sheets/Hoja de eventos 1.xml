@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Hoja de eventos 1</name>
+    <events>
+        <variable constant="0" name="tiempo" sid="6464348383955099" static="0" type="number">0.11</variable>
+        <event-group description="opciones del menu principal lago y laguna" sid="6380149584099081" title="opcionesMenu">
+            <sub-events>
+                <event-block sid="2330096953177336">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="5931717039153993" type="Mouse">
+                            <param id="0" name="Object">ciudad</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="437872446990094" type="ciudad">
+                            <param id="0" name="Scale">1.3</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="8712931754454902" type="ciudad">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1489581517542466">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="5398083707345247" type="Mouse">
+                            <param id="0" name="Object">ciudad</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="8724940177958643" type="ciudad">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="2520792684416708" type="ciudad">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4207376919858687">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="6181476682429389" type="Mouse">
+                            <param id="0" name="Object">laguna</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="1374914264862054" type="laguna">
+                            <param id="0" name="Scale">1.3</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="5124901121757911" type="laguna">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7152837480644843">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="9721803622457881" type="Mouse">
+                            <param id="0" name="Object">laguna</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="1990418519790323" type="laguna">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="4983672107855659" type="laguna">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="3494937749362928">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="246048365321689" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">laguna</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Play" sid="5191218837551868" type="ciudadvideo" />
+            </actions>
+        </event-block>
+        <event-block sid="9347244620499968">
+            <conditions>
+                <condition id="2" name="Has ended" sid="2416516269632161" type="ciudadvideo" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9451609055152876" type="System">
+                    <param id="0" name="Layout">juego2menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5896440756425219">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8360409371633292" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ciudad</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Play" sid="2688846292586613" type="Video2" />
+            </actions>
+        </event-block>
+        <event-block sid="9772286725550141">
+            <conditions>
+                <condition id="2" name="Has ended" sid="6348163346624695" type="Video2" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3781521353849127" type="System">
+                    <param id="0" name="Layout">Menu1-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="866923410617753">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="426868626583505" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite17</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="903995709527935" type="System">
+                    <param id="0" name="Layout">nivel3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

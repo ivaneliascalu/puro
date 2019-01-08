@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <variable constant="0" name="maxTimer" sid="390703299688011" static="0" type="number">240</variable>
+        <variable constant="0" name="timer" sid="820925903377252" static="0" type="number">0</variable>
+        <variable constant="0" name="control_menu" sid="442668390558366" static="0" type="number">0</variable>
+        <variable constant="0" name="puntos2" sid="409123801638287" static="0" type="number">0</variable>
+        <event-block sid="239252240657171">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="322063269192861" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="490354688123234" type="punto">
+                    <param id="0" name="Text">puntos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="694140232437795">
+            <conditions>
+                <condition id="2" name="Key is down" sid="229801910715225" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="317437711426723" type="goku">
+                    <param id="0" name="Animation">&quot;ir&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="404231829075920" type="goku">
+                    <param id="0" name="Instance variable">Correntmove</param>
+                    <param id="1" name="Value">goku.AnimationName</param>
+                </action>
+                <action id="-15" name="Set visible" sid="429063755094909" type="punto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="454470642004533" type="Sprite21">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="678095698575256" type="Sprite11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="278150786785526">
+            <conditions>
+                <condition id="2" name="Key is down" sid="692620835203351" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="672287240604609" type="goku">
+                    <param id="0" name="Animation">&quot;atras&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="973615482949383" type="punto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="263150311427243" type="Sprite21">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="889713557235930" type="Sprite11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="470229270933912">
+            <conditions>
+                <condition id="2" name="Key is down" sid="673490095979280" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="741024789117607" type="goku">
+                    <param id="0" name="Animation">&quot;arriba&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="488749470226018" type="punto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="890954195575322" type="Sprite11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="475489015624430">
+            <conditions>
+                <condition id="2" name="Key is down" sid="897620620095124" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="812962013013664" type="goku">
+                    <param id="0" name="Animation">&quot;abajo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="267574940777739" type="punto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="413995841043575" type="Sprite21">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="402202514626307" type="Sprite11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="426379274034279">
+            <conditions>
+                <condition id="7" name="On any key released" sid="518423617723439" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="791097388099572" type="goku" />
+            </actions>
+        </event-block>
+        <event-block sid="918994212267557">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="192499069799248" type="System">
+                    <param id="0" name="Variable">control_menu</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="426501479412160" type="System">
+                    <param id="0" name="Layer">&quot;menuPausa&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="807265519359570" type="Sprite22">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="434871125315804" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="888960274507063">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="451520727372592" type="System">
+                    <param id="0" name="Variable">control_menu</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="334818998430038" type="System">
+                    <param id="0" name="Layer">&quot;menuPausa&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="601154789039844" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="573134390485392" type="Sprite22">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="629617926169291">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="662787198275047" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite22</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="143989791290671" type="System">
+                    <param id="0" name="Variable">control_menu</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="574198532759302">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="769097820657527" type="System">
+                    <param id="0" name="Layer">&quot;menuPausa&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="847064709059101">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="204175256320030" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btnContinue</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="332228622355569" type="System">
+                            <param id="0" name="Variable">control_menu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="422772881882966">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="710395489115032" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btnSalir</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="785609393930405" type="System">
+                            <param id="0" name="Layout">menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="899180412286547">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="859526359813354" type="goku">
+                    <param id="0" name="Object">Sprite50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="905810493225019" type="Sprite50" />
+                <action id="-9" name="Set value" sid="150805895861394" type="System">
+                    <param id="0" name="Variable">puntos2</param>
+                    <param id="1" name="Value">puntos2+10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="353795347950614">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="425498205318395" type="goku">
+                    <param id="0" name="Object">manguera2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="978468599014923" type="manguera2" />
+                <action id="-9" name="Set value" sid="159866705752005" type="System">
+                    <param id="0" name="Variable">puntos2</param>
+                    <param id="1" name="Value">puntos2+10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="493320749705769">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="691130522841581" type="goku">
+                    <param id="0" name="Object">Manguera3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="747544144410067" type="Manguera3" />
+                <action id="-9" name="Set value" sid="150161779093346" type="System">
+                    <param id="0" name="Variable">puntos2</param>
+                    <param id="1" name="Value">puntos2+10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="493108373174946">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="479942419557483">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="626582785663632" type="goku">
+                    <param id="0" name="Object">startime</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="746139035051951" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">maxTimer</param>
+                </action>
+                <action id="-9" name="Destroy" sid="457238996785865" type="startime" />
+            </actions>
+        </event-block>
+        <event-block sid="623711350961619">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="836191328039303" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="761280442535526" type="tiempo">
+                    <param id="0" name="Text">floor(timer/60%60)&amp;&quot;:&quot;&amp;floor(timer%60)</param>
+                </action>
+                <action id="0" name="Set text" sid="671676300510977" type="punto">
+                    <param id="0" name="Text">puntos2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="498106078060201">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="983438559491222" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="397140151896773" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="620581632996512">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="409787441168457" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="983260770219781" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="927165658920585">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="909409733333012" type="Mouse">
+                    <param id="0" name="Object">siguietenivel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="321149026741594" type="siguietenivel">
+                    <param id="0" name="Width">100</param>
+                    <param id="1" name="Height">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="693226657642836">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="150248869735787" type="Mouse">
+                    <param id="0" name="Object">siguietenivel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="234369180738838" type="siguietenivel">
+                    <param id="0" name="Width">75</param>
+                    <param id="1" name="Height">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="979451420394572">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="368282042217674" type="Mouse">
+                    <param id="0" name="Object">volverJugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="752069330397513" type="volverJugar">
+                    <param id="0" name="Width">100</param>
+                    <param id="1" name="Height">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="586364309649970">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="267458908093221" type="Mouse">
+                    <param id="0" name="Object">volverJugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="626186830755355" type="volverJugar">
+                    <param id="0" name="Width">75</param>
+                    <param id="1" name="Height">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="972846321987959">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="842834716010225" type="System">
+                    <param id="0" name="Variable">puntos2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">150</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="268735875083870" type="System">
+                    <param id="0" name="Layer">&quot;nivelCompletado&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="591767239668182">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="586743633134581" type="System">
+                    <param id="0" name="Layer">&quot;nivelCompletado&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="663557314729748">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="671459295540012" type="Mouse">
+                            <param id="0" name="Object">volverJugar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="828820557197513" type="volverJugar">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="316317340499055" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="857102924834892" type="volverJugar">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="694706379625355" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="233830059644564" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="838724093412740">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="789959070381260" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">siguietenivel</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="296717119822611" type="System">
+                            <param id="0" name="Layout">juego11</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="901042704847121">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="775884685514308" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="978462233522410" type="System">
+                    <param id="0" name="Layer">&quot;nivelCompletado&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="328261307779762" type="System">
+                    <param id="0" name="Variable">puntos2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="423174285777050">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="496210429287637" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">volverJugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="475414217004433" type="System">
+                    <param id="0" name="Variable">puntos2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

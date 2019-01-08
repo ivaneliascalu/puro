@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ESjuego2 1</name>
+    <events>
+        <variable constant="0" name="puntos" sid="1418781598427478" static="0" type="number">0</variable>
+        <event-block sid="360825073163229">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2160691248097135" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7654336565874537" type="punto">
+                    <param id="0" name="Text">puntos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8272874336766701">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6263791296866552" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1879968030200703" type="goku">
+                    <param id="0" name="Animation">&quot;ir&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4639375453566506" type="punto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2198765289175755" type="Sprite6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6331764199309812" type="Sprite11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6007516220371749" type="NODEJES">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1752588432716247">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5372987188312976" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6559687126361516" type="goku">
+                    <param id="0" name="Animation">&quot;atras&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9848109929898989" type="punto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5320262712414722" type="Sprite6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1706353253687396" type="Sprite11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1749351216246695" type="NODEJES">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1069110768521185">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8687572398717755" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1148824621678339" type="goku">
+                    <param id="0" name="Animation">&quot;arriba&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4236314695224972" type="punto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4453873539021526" type="Sprite6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="781520202197534" type="Sprite11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2747163567100854" type="NODEJES">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2211355751102435">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2426897826511365" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5070264656280485" type="goku">
+                    <param id="0" name="Animation">&quot;abajo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="732119784889284" type="punto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8852241561291207" type="Sprite6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4690767970250815" type="Sprite11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1656236431031639" type="NODEJES">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6984651162216391">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="64147858391211" type="goku">
+                    <param id="0" name="Object">llama</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="0" name="Set active" sid="3619846837163094" type="llama">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="4165789657920265" type="llama">
+                    <param id="0" name="Animation">&quot;gollama&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7976630523523606">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8663992967929955" type="llama">
+                    <param id="0" name="Object">paredVertical</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1254123820757066" type="llama" />
+                <action id="-10" name="Add to" sid="3355228489184412" type="System">
+                    <param id="0" name="Variable">puntos</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3978520799705982">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2464912636046254" type="goku">
+                    <param id="0" name="Object">oveja</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="0" name="Set active" sid="666035494358432" type="oveja">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="4334769618594259" type="oveja">
+                    <param id="0" name="Animation">&quot;gooveja&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3420220253894792">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8170249474141339" type="oveja">
+                    <param id="0" name="Object">paredVertical</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="177268547296013" type="oveja" />
+                <action id="-10" name="Add to" sid="2442528620938464" type="System">
+                    <param id="0" name="Variable">puntos</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
